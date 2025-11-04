@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Hotels xsi:schemaLocation="https://mwroberts78.github.io/CSE445/Hotels.xsd">
+<Hotels 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="https://mwroberts78.github.io/CSE445/Hotels.xsd">
   <Hotel Rating="4.5">
     <Name>The Westin Poinsett, Greenville</Name>
     <Phone type="local">864-421-9700</Phone>
