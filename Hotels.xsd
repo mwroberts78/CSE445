@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <!-- Root element -->
+  <xsd:element name="Hotels">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Hotel" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <!-- Name -->
+              <xsd:element name="Name" type="xsd:string"/>
+              <!-- One or more Phone elements; each phone requires a @type attribute -->
+              <xsd:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- Address -->
+              <xsd:element name="Address" type="AddressType"/>
+            </xsd:sequence>
+            <!-- Optional Rating attribute (e.g., 4.2); present on some hotels only -->
+            <xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- Simple phone number pattern (liberal) -->
+  <xsd:simpleType name="PhoneNumber">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="(\d{3}[-\s]?\d{3}[-\s]?\d{4}|\(\d{3}\)\s?\d{3}[-\s]?\d{4})"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Phone type with required @type -->
+  <xsd:complexType name="PhoneType">
+    <xsd:simpleContent>
+      <xsd:extension base="PhoneNumber">
+        <xsd:attribute name="type" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="local"/>
+              <xsd:enumeration value="tollfree"/>
+              <xsd:enumeration value="mobile"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <!-- Address -->
+  <xsd:complexType name="AddressType">
+    <xsd:sequence>
+      <xsd:element name="Number" type="xsd:string"/>
+      <xsd:element name="Street" type="xsd:string"/>
+      <xsd:element name="City" type="xsd:string"/>
+      <xsd:element name="State">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z]{2}"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="Zip">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{5}"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="NearestAirport" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

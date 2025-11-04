@@ -1,0 +1,122 @@
+<Hotel>
+  <Hotel Rating="4.5">
+    <Name>The Westin Poinsett, Greenville</Name>
+    <Phone type="local">864-421-9700</Phone>
+    <Phone type="tollfree">800-937-8461</Phone>
+    <Address>
+      <Number>120</Number>
+      <Street>S Main St</Street>
+      <City>Greenville</City>
+      <State>SC</State>
+      <Zip>29601</Zip>
+      <NearestAirport>GSP</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.3">
+    <Name>Hyatt Regency Greenville</Name>
+    <Phone>864-235-1234</Phone>
+    <Address>
+      <Number>220</Number>
+      <Street>N Main St</Street>
+      <City>Greenville</City>
+      <State>SC</State>
+      <Zip>29601</Zip>
+      <NearestAirport>GSP</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel>
+    <Name>AC Hotel Greenville Downtown</Name>
+    <Address>
+      <Number>315</Number>
+      <Street>S Main St</Street>
+      <City>Greenville</City>
+      <State>SC</State>
+      <Zip>29601</Zip>
+      <NearestAirport>GMU</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.4">
+    <Name>Residence Inn Greenville Downtown</Name>
+    <Name>Residence Inn Greenville Downtown</Name><Phone type="local">864-720-2900</Phone>
+    <Address>
+      <Number>200</Number>
+      <Street>E Washington St</Street>
+      <City>Greenville</City>
+      <State>SC</State>
+      <Zip>29601</Zip>
+      <NearestAirport>GMU</NearestAirport>
+  </Hotel>
+  <Hotel>
+    <Name>Hampton Inn &amp; Suites Greenville-Downtown-RiverPlace</Name>
+    <Phone type="local">864-271-8700</Phone>
+    <Phone type="tollfree">800-445-8667</Phone>
+    <Address>
+      <Number>171</Number>
+      <Street>Riverplace</Street>
+      <City>Greenville</City>
+      <State>SC</State>
+      <Zip>29601</Zip>
+      <NearestAirport>GSP</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.1">
+    <Name>Hilton Greenville</Name>
+    <Phone type="local">864-232-4747</Phone>
+    <Address>
+      <Number>45</Number>
+      <Street>W Orchard Park Dr</Street>
+      <City>Greenville</City>
+      <State>SC</State>
+      <Zip>29615</Zip>
+      <NearestAirport>GSP</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.2">
+    <Name>Spartanburg Marriott</Name>
+    <Phone type="local">864-596-1211</Phone>
+    <Address>
+      <Number>299</Number>
+      <Street>N Church St</Street>
+      <City>Spartanburg</City>
+      <State>SC</State>
+      <Zip>29306</Zip>
+      <NearestAirport>GSP</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel>
+    <Name>Hilton Garden Inn Spartanburg</Name>
+    <Phone type="local">864-913-1200</Phone>
+    <Address>
+      <Number>805</Number>
+      <Street>Spartan Blvd</Street>
+      <City>Spartanburg</City>
+      <State>SC</State>
+      <Zip>29301</Zip>
+      <NearestAirport>GSP</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel Rating="4.4">
+    <Name>Courtyard by Marriott Clemson</Name>
+    <Phone type="local">864-654-8833</Phone>
+    <Address>
+      <Number>201</Number>
+      <Street>Canoy Ln</Street>
+      <City>Clemson</City>
+      <State>SC</State>
+      <Zip>29631</Zip>
+      <NearestAirport>CEU</NearestAirport>
+    </Address>
+  </Hotel>
+  <Hotel>
+    <Name>Tru by Hilton Anderson</Name>
+    <Phone type="local">864-760-4500</Phone>
+    <Address>
+      <Number>118</Number>
+      <Street>Interstate Blvd</Street>
+      <City>Anderson</City>
+      <State>SC</State>
+      <Zip>29621</Zip>
+      <NearestAirport>AND</NearestAirport>
+    </Address>
+  </Hotel>
+</Hotel>
